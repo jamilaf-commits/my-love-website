@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Prince</title>
+  <link rel="stylesheet" href="./For My Prince_files/style.css">
+</head>
+<body>
+  
+  <header>For My Prince ❤
+  <p class="quote"> " You are my today and all of my tomorrow."</p>
+  </header>
+  <div class="hearts-container"> 
+    <div class="heart">💘</div>
+    <div class="heart">💝</div>
+    <div class="heart">💕</div>
+    <div class="heart">💗</div>
+    <div class="heart">💖</div>
+  </div>
+  
+  <div class="envelope-container" onclick="open-letter()">
+    <div class="envelope">
+      
+      
+      </div>
+      <div class="text" onclick="openletter()">
+      <p>"Tap to read my love for you!"</p> 
+</div>
+
+      <div class="letter" id="letter" style="display: none;">
+        <h2>To My Love💌</h2>
+        <p>
+          MY DEAREST ALI,💖 <br><br>
+            From the moment I met you, my life become brighter.
+            you have become my life, my peace, my strength, 
+            the reason of my smile, and my favourite person 
+            all in one day.
+            I just want you to know how deeply grateful I am to 
+            have you in my life. You make me feel loved in ways 
+            that I never imagined possible, and your presence has
+            changed my world for better. 
+            I love you endlessly and I will keep choosing you in 
+            every single day. I LOVE YOU SO MUCH MY HUBBY💕<br><br>
+            Always Yours,<br>
+            Abeer Ali💞
+          </p>
+          <button onclick="closeletter()">Close</button>
+      </div>
+</div>
+
+
+<script>
+  function openletter() {
+    document.getElementById("letter").style.display = "block";
+  }
+
+  function closeletter() {
+    document.getElementById("letter").style.display = "none";
+  }
+</script>
+ 
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
